@@ -172,10 +172,10 @@ The request should be sent as JSON with the following structure:
 
 #### Required Fields
 
-| Field      | Type   | Validation                     | Description          |
-| ---------- | ------ | ------------------------------ | -------------------- |
-| `email`    | String | Valid email format, required   | User's email address |
-| `password` | String | Required                       | User's password      |
+| Field      | Type   | Validation                   | Description          |
+| ---------- | ------ | ---------------------------- | -------------------- |
+| `email`    | String | Valid email format, required | User's email address |
+| `password` | String | Required                     | User's password      |
 
 ---
 
@@ -274,12 +274,12 @@ curl -X POST http://localhost:3000/users/login \
 
 ### Status Codes
 
-| Status Code | Description                                            |
-| ----------- | ------------------------------------------------------ |
-| `200`       | User successfully logged in, token and details returned |
+| Status Code | Description                                               |
+| ----------- | --------------------------------------------------------- |
+| `200`       | User successfully logged in, token and details returned   |
 | `400`       | Bad request - validation error or missing required fields |
-| `401`       | Unauthorized - invalid email or password               |
-| `500`       | Server error - internal server error                   |
+| `401`       | Unauthorized - invalid email or password                  |
+| `500`       | Server error - internal server error                      |
 
 ---
 
