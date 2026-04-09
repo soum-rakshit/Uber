@@ -5,6 +5,7 @@ import cors from "cors";
 import express from "express";
 import connectToDB from "./db/db.js";
 import userRoutes from "./routes/user.routes.js";
+import cookieParser from "cookie-parser";
 
 const app = express();
 
@@ -15,6 +16,7 @@ connectToDB();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 // Routes
 app.get("/", (req, res) => {
