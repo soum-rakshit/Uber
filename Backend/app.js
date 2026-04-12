@@ -6,6 +6,7 @@ import express from "express";
 import connectToDB from "./db/db.js";
 import userRoutes from "./routes/user.routes.js";
 import cookieParser from "cookie-parser";
+import captainRoutes from "./routes/captain.routes.js";
 
 const app = express();
 
@@ -24,5 +25,6 @@ app.get("/", (req, res) => {
 });
 
 app.use("/users", userRoutes);
+app.use("/captain", captainRoutes);
 
-export default app;
+export default app; 

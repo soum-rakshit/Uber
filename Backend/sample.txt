@@ -1,0 +1,20 @@
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWQ3YTQ2YWFmMmU3NjVmMTRlYTNhMzkiLCJpYXQiOjE3NzU3NDAwMTAsImV4cCI6MTc3NTgyNjQxMH0.idceGwKU1sEoOpTLlepScwGdC4umzWe5wYx1d1kwX9E",
+    "captain": {
+        "fullname": {
+            "firstname": "Aarav",
+            "lastname": "Mukherjee"
+        },
+        "email": "aarav.mukherjee@rapidmail.dev",
+        "password": "$2b$10$jvRkf6QUuJlR0Mso3dgwv.7Pe8SuQizSZu97h0dQrm8A1cRf79ufa",
+        "status": "inactive",
+        "vehicle": {
+            "color": "Midnight Blue",
+            "plate": "KA51MX4278",
+            "capacity": 4,
+            "vehicleType": "car"
+        },
+        "_id": "69d7a46aaf2e765f14ea3a39",
+        "__v": 0
+    }
+}
