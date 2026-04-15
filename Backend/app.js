@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
     res.send("Hello World!");
 });
 
-app.use("/users", userRoutes);
+app.use("/user", userRoutes);
 app.use("/captain", captainRoutes);
 
-export default app; 
+export default app;
