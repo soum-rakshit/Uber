@@ -22,8 +22,11 @@ const UserProtectWrapper = ({ children }) => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
+        // console.log(token);
+        
         if (!token) {
             navigate("/login");
+            return;
         }
 
         axios
@@ -42,7 +45,7 @@ const UserProtectWrapper = ({ children }) => {
                 localStorage.removeItem("token");
                 navigate("/login");
             });
-    }, [token]);
+    }, [token, navigate]);
 
     if (isLoading) {
         return <div>Loading...</div>;

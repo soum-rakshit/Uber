@@ -20,6 +20,8 @@ const Captainlogin = () => {
       email: email,
       password
     }
+    console.log(captain);
+    
 
     const response = await axios.post(`${import.meta.env.VITE_BASE_URL}/captain/login`, captain)
 
