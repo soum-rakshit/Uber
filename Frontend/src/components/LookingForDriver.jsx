@@ -24,33 +24,31 @@ const LookingForDriver = (props) => {
                 <div className="flex items-center gap-3 p-3 border-b-1">
                     <i className="text-lg ri-map-pin-fill"></i>
                     <div>
-                        <h3 className="text-lg font-medium">Times Square</h3>
-                        <p className="text-sm text-gray-600">42nd Street, New York, NY 10036</p>
+                        <h3 className="text-sm font-medium">{props.pickup}</h3>
                     </div>
                 </div>
                 <div className="flex items-center gap-3 p-3 border-b-1">
                     <i className="text-lg ri-map-pin-fill"></i>
                     <div>
-                        <h3 className="text-lg font-medium">Times Square</h3>
-                        <p className="text-sm text-gray-600">42nd Street, New York, NY 10036</p>
+                        <h3 className="text-sm font-medium">{props.destination}</h3>
                     </div>
                 </div>
                 
                 <div className="flex items-center gap-3 p-3">
                     <i className="text-lg ri-wallet-fill"></i>
-                    <h3 className="text-lg font-medium">₹193.20</h3>
+                    <h3 className="text-lg font-medium">₹{props.fare[props.vehicleType]}</h3>
                     <p className="text-sm mt-1 text-gray-600">Cash Cash</p>
                 </div>
             </div>
 
-            <div className="p-2 mt-5">
+            {/* <div className="p-2 mt-5">
                 <button onClick={() => {
                     props.setWaitingPanel(true)
                     props.setVehicleFound(false)
                 }} className="w-full bg-green-600 text-white font-semibold py-2 p-2 rounded-xl">
                     Next
                 </button>
-            </div>
+            </div> */}
 
             
         </div>

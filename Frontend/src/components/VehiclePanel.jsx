@@ -1,6 +1,7 @@
 import React from "react";
 
 const VehiclePanel = (props) => {
+    // console.log(`${props.fare}`)
     return (
         <div>
             <h5
@@ -15,6 +16,7 @@ const VehiclePanel = (props) => {
             <h3 className="text-2xl font-semibold mb-5">Choose a ride</h3>
             <div
                 onClick={() => {
+                    props.selectVehicle('car')
                     props.setConfirmRidePanel(true);
                 }}
                 className=" car flex active:border-3
@@ -37,11 +39,12 @@ const VehiclePanel = (props) => {
                         Affordable, compact rides
                     </p>
                 </div>
-                <h2 className="px-2 text-xl font-semibold"> ₹193.20 </h2>
+                <h2 className="px-2 text-xl font-semibold"> ₹{props.fare.car} </h2>
             </div>
             <div
                 onClick={() => {
                     props.setConfirmRidePanel(true);
+                    props.selectVehicle('moto')
                 }}
                 className=" bike flex  active:border-3 mb-2 items-center justify-between  p-3 rounded-xl w-full"
             >
@@ -62,11 +65,12 @@ const VehiclePanel = (props) => {
                         Affordable, motorcycle rides
                     </p>
                 </div>
-                <h2 className="px-2 text-xl font-semibold"> ₹102.30 </h2>
+                <h2 className="px-2 text-xl font-semibold"> ₹{props.fare.moto}</h2>
             </div>
             <div
                 onClick={() => {
                     props.setConfirmRidePanel(true);
+                    props.selectVehicle('auto')
                 }}
                 className=" auto flex  active:border-3 mb-2 items-center justify-between  p-3 rounded-xl w-full"
             >
@@ -87,7 +91,7 @@ const VehiclePanel = (props) => {
                         Affordable, auto rides
                     </p>
                 </div>
-                <h2 className="px-2 text-xl font-semibold"> ₹134.69 </h2>
+                <h2 className="px-2 text-xl font-semibold"> ₹{props.fare.auto} </h2>
             </div>
         </div>
     );
